@@ -41,12 +41,15 @@
           </div>
           <label for="key"
             >¡Elige la llave!
-            <input
-              type="number"
-              name="key"
-              id=""
-              class="form__input form__input--number"
-            />
+            <div class="key__container">
+              <img src="assets/key.svg" class="key__icon" />
+              <input
+                type="number"
+                name="key"
+                id=""
+                class="form__input form__input--number"
+              />
+            </div>
           </label>
         </div>
         <label for="">
@@ -56,7 +59,7 @@
             class="form__input"
             cols="30"
             rows="10"
-            placeholder="¡Este es el resultado!"
+            placeholder="¡Aquí aparecerá el resultado!"
           ></textarea>
         </label>
       </form>
