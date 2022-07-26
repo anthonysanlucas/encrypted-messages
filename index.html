@@ -11,25 +11,55 @@
     <header class="header">
       <nav class="nav">
         <ul class="nav__links">
-          <li class="nav__link">¿Cómo Funciona?</li>
+          <li>
+            <a href="about.html" class="nav__link">¿Cómo Funciona?</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <h1 class="main__title">Lorem ipsum dolor sit amet</h1>
-      <section class="main__section">
-        <h3 class="section__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-          aut.
-        </h3>
-      </section>
-      <section class="main__section btn__section"></section>
-      <section class="main__section">
-        <h3 class="section__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-          aut.
-        </h3>
-      </section>
+      <form action="" class="form">
+        <h1>Mensajes Privados</h1>
+        <label for="message">
+          <textarea
+            name="message"
+            id="message"
+            class="form__input"
+            cols="30"
+            rows="10"
+            placeholder="¡Ingresa aquí el mensaje que deseas utilizar!"
+          ></textarea>
+        </label>
+        <div class="form__actions">
+          <div class="form__btns">
+            <button type="button" class="form__btn form__btn--cipher">
+              Cifrar
+            </button>
+            <button type="button" class="form__btn form__btn--decipher">
+              Descifrar
+            </button>
+          </div>
+          <label for="key"
+            >¡Elige la llave!
+            <input
+              type="number"
+              name="key"
+              id=""
+              class="form__input form__input--number"
+            />
+          </label>
+        </div>
+        <label for="">
+          <textarea
+            name="message"
+            id="message"
+            class="form__input"
+            cols="30"
+            rows="10"
+            placeholder="¡Este es el resultado!"
+          ></textarea>
+        </label>
+      </form>
     </main>
   </body>
 </html>
