@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Outfit', sans-serif;
+  background-color: #232741;
 }
 
 li {
@@ -24,6 +25,13 @@ textarea {
   width: 100%;
   resize: none;
   outline: none;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
 }
 
 .textarea-container {
