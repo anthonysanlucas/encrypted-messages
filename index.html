@@ -27,48 +27,53 @@
     <main class="main">
       <form action="" class="form">
         <h1>Mensajes Privados</h1>
-        <label for="message">
-          <textarea
-            name="message"
-            id="message"
-            class="form__input"
-            cols="30"
-            rows="10"
-            placeholder="¡Ingresa aquí el mensaje que deseas utilizar!"
-          ></textarea>
-        </label>
-        <div class="form__actions">
-          <div class="form__btns">
-            <button type="button" class="form__btn form__btn--cipher">
-              Cifrar
-            </button>
-            <button type="button" class="form__btn form__btn--decipher">
-              Descifrar
-            </button>
+        <div class="form__container">
+          <div class="form__input">
+            <label for="message">
+              <textarea
+                name="message"
+                id="message"
+                class="input__text"
+                cols="30"
+                rows="10"
+                placeholder="¡Ingresa aquí el mensaje que deseas utilizar!"
+              ></textarea>
+            </label>
           </div>
-          <label for="key"
-            >¡Elige la llave!
-            <div class="key__container">
-              <img src="assets/key.svg" class="key__icon" />
-              <input
-                type="number"
-                name="key"
-                id=""
-                class="form__input form__input--number"
-              />
+          <div class="form__actions">
+            <div class="form__btns">
+              <button type="button" class="form__btn form__btn--cipher">
+                Cifrar
+              </button>
+              <button type="button" class="form__btn form__btn--decipher">
+                Descifrar
+              </button>
             </div>
+            <label for="key"
+              >¡Elige la llave!
+              <div class="key__container">
+                <img src="assets/key.svg" class="key__icon" />
+                <input
+                  type="number"
+                  name="key"
+                  id=""
+                  class="form__input form__input--number"
+                />
+              </div>
+            </label>
+          </div>
+          <div class="form__output"></div>
+          <label for="">
+            <textarea
+              name="message"
+              id="message"
+              class="output__text"
+              cols="30"
+              rows="10"
+              placeholder="¡Aquí aparecerá el resultado!"
+            ></textarea>
           </label>
         </div>
-        <label for="">
-          <textarea
-            name="message"
-            id="message"
-            class="form__input"
-            cols="30"
-            rows="10"
-            placeholder="¡Aquí aparecerá el resultado!"
-          ></textarea>
-        </label>
       </form>
     </main>
   </body>
