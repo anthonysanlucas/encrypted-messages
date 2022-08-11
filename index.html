@@ -7,12 +7,13 @@
     <title>Mensajes Seguros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <!-- particle effects -->
@@ -28,7 +29,7 @@
       </nav>
     </header>
     <main class="main">
-      <form class="form glass-container">
+      <form class="form glass-container" id="form">
         <h1 class="form__title">Mensajes Seguros</h1>
         <div class="form__container">
           <!-- first text area -->
@@ -41,6 +42,7 @@
                 cols="30"
                 rows="10"
                 placeholder="Ingresa el mensaje que deseas utilizar"
+                required
               ></textarea>
             </label>
           </div>
@@ -89,7 +91,7 @@
           </div>
           <!-- second text area -->
           <div class="form__output textarea-container">
-            <label for="">
+            <label>
               <textarea
                 name="output"
                 id="output"
@@ -97,7 +99,7 @@
                 cols="30"
                 rows="10"
                 placeholder="¡Aquí aparecerá el resultado!"
-                disabled
+                readonly
               ></textarea>
             </label>
           </div>
