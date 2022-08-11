@@ -42,21 +42,22 @@ input[type='number']::-webkit-outer-spin-button {
   height: 100vh;
   z-index: -1;
 }
-/* ----- */
 
 .textarea-container {
   max-width: 20rem;
 }
 
+/* improve a .glass-container */
 .glass-container {
   display: grid;
   place-content: center;
+  width: 97%;
   margin: 2rem auto;
   padding: 2rem;
   font-size: var(--medium-text);
   border-radius: var(--b-radius);
-  background-color: rgba(25, 41, 89, 0.4);
-  backdrop-filter: blur(1px);
+  background-color: rgba(25, 41, 89, 0.3);
+  backdrop-filter: blur(2px);
   border: solid 1px rgba(25, 41, 89, 0.5);
 }
 
@@ -72,7 +73,13 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .nav__links {
-  padding-left: 1rem;
+  max-width: 70rem;
+}
+
+.nav__links--home {
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
 }
 
 .nav__links li {
@@ -92,11 +99,6 @@ input[type='number']::-webkit-outer-spin-button {
 .main {
   display: grid;
   justify-content: center;
-  margin: 0.5rem;
-}
-
-.form {
-  width: min(100%, 70rem);
 }
 
 .form__title {
@@ -247,7 +249,6 @@ input[type='number']::-webkit-outer-spin-button {
   opacity: 0.8;
 }
 
-/* desktop */
 @media screen and (min-width: 810px) {
   .form__container {
     grid-template-columns: repeat(3, 1fr);
