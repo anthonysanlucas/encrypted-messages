@@ -65,9 +65,12 @@ function isCapitalized(capitalize, letter) {
 }
 
 function validateInput(message, key, output, callback) {
-  return message && key
-    ? callback
-    : (output.value = '¡Ingresar el mensaje y elige una llave!');
+  if (message && key) {
+    output.classList.remove('alert-message');
+    return callback;
+  }
+  output.classList.add('alert-message');
+  return (output.value = '¡Ingresar el mensaje y elige una llave!');
 }
 
 function deleteKey() {

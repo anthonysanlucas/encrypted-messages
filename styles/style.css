@@ -111,12 +111,16 @@ input[type='number']::-webkit-outer-spin-button {
   gap: 1rem;
 }
 
-.input__text {
+.form__textarea {
   font-size: var(--small-text);
   color: var(--white-text);
   border: solid 2px rgba(25, 41, 89, 0.7);
   border-radius: var(--b-radius);
   padding: 0.5rem;
+}
+
+.alert-message {
+  color: var(--accent-color);
 }
 
 .form__actions {
@@ -194,11 +198,11 @@ input[type='number']::-webkit-outer-spin-button {
   color: var(--accent-color);
 }
 
-.input__text:hover {
+.form__textarea--input:hover {
   border: solid 2px rgba(90, 191, 173, 0.5);
 }
 
-.input__text:focus {
+.form__textarea--input:focus {
   border: solid 2px var(--accent-color);
 }
 
