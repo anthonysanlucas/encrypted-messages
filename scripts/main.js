@@ -70,7 +70,7 @@ function validateInput(message, key, output, callback) {
     return callback;
   }
   output.classList.add('alert-message');
-  return (output.value = '¡Ingresar el mensaje y elige una llave!');
+  return (output.value = '¡Ingresa el mensaje y elige una llave!');
 }
 
 function deleteKey() {
