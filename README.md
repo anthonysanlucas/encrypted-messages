@@ -18,7 +18,7 @@ Esto es para el alfabeto español que contiene veintisiete letras, ahora bien si
 ```
 Ahora la letra a se ha desplazado 3 espacios por lo que se encuentra en la posición 4 y así para el resto de las letras. Con esto ya podríamos obtener un mensaje cifrado.
 
->Toma en cuenta que para el desplazamiento de las ultimas letras del abecedario que superan la posición 27, lo único que se hace en continuar el desplazamiento desde la posición 0 hasta obtener su nueva posición. Además, solo existen 26 posibles combinaciones de cifrado. 
+>Toma en cuenta que para el desplazamiento de las ultimas letras del abecedario que superan la posición 27, lo único que se hace es continuar el desplazamiento desde la posición 0 hasta obtener su nueva posición. Además, solo existen 26 posibles combinaciones de cifrado. 
 
 Pero ¿Cómo lo desciframos? Pues simplemente usamos la misma idea y ahora deberíamos hacer el mismo desplazamiento de tres espacios pero en la dirección contraria, de esa forma regresamos al posicionamiento inicial.
 
