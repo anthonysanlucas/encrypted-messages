@@ -42,23 +42,91 @@
     <main class="">
       <section class="about glass-container">
         <article class="about__article">
-          <h1 class="about__title">¡Te explico de que va esto!</h1>
+          <h3 class="about__title about__title--center">
+            ¡Te explico de que va esto!
+          </h3>
           <p class="about__paragraph">
-            Realmente lo que está sucediendo detrás de escensa, es que tomamos
-            el texto que ingresas junto con la llave que eliges y le aplicamos
-            un algoritmo de cifrado cesar. accusantium dolore debitis iusto
-            deleniti. Sequi culpa maxime qui harum? Neque eveniet porro deserunt
-            deleniti sunt?
+            Realmente lo que está sucediendo detrás de escena es que tomamos el
+            texto que ingresas y usamos la llave para aplicarle un cifrado cesar
+            o también llamado cifrado por desplazamiento.
           </p>
-          <h2>LOREM2</h2>
+          <h1 class="about__title">¿Qué es el Cifrado César?</h1>
           <p class="about__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-            earum, veniam veritatis temporibus, unde voluptatibus rerum
-            molestias repellat quaerat saepe velit tempora officia excepturi,
-            porro esse quas dignissimos blanditiis!
+            Esto es lo que se conoce como cifrado por sustitución, es una
+            técnica simple que se remonta al siglo I a. e. c. en esta época
+            Julio César era un político y militar romano. El cifrado césar fue
+            nombrado así en honor a este personaje, dado que existen registros
+            de que usaba un desplazamiento de tres para asegurar sus mensajes de
+            contenido militar.
+          </p>
+          <h2 class="about__title">¿Cómo funciona?</h2>
+          <p class="about__paragraph">
+            Puedes imaginar a el alfabeto y asignarle a cada letra una posición,
+            por lo que tendríamos cada letra y su posición:
+          </p>
+          <code class="about__code">{ a = 0, b = 1, c = 2 … z = 27 }</code>
+          <p class="about__paragraph">
+            Esto es para el alfabeto español que contiene veintisiete letras,
+            ahora bien si usamos una <span class="bold-text">llave 3</span> lo
+            que haríamos sería desplazar a todo el alfabeto en
+            <span class="bold-text">3 espacios</span>, teniendo como resultado:
+          </p>
+          <code class="about__code">{ a = 4, b = 5, c = 5 … z = 2 }</code>
+          <p class="about__paragraph">
+            Toma en cuenta que para el desplazamiento de las ultimas letras del
+            abecedario que superan la posición 27, lo único que se hace es
+            continuar el desplazamiento desde la posición 0 hasta obtener su
+            nueva posición. Además,
+            <span class="bold-text"
+              >solo existen 26 posibles combinaciones</span
+            >
+            de cifrado.
+          </p>
+          <p class="about__paragraph">
+            Ahora la letra <span class="bold-text">'a'</span> se ha desplazado 3
+            espacios por lo que se encuentra en la posición 4 y así para el
+            resto de las letras. Con esto ya podríamos obtener un mensaje
+            cifrado. Pero ¿Cómo lo desciframos? Pues simplemente usamos la misma
+            idea y ahora deberíamos hacer el mismo desplazamiento de tres
+            espacios pero en la dirección contraria, de esa forma regresamos al
+            posicionamiento inicial.
+          </p>
+          <h2 class="about__title">¿Realmente es seguro?</h2>
+          <p class="about__paragraph">
+            La respuesta corta es NO, el Cifrado César no es realmente seguro,
+            tal vez en su época pudo funcionar porque pocas personas aprendían a
+            leer y tampoco iban a hacer esfuerzos por descubrir que significado
+            había detrás.
+          </p>
+          <p class="about__paragraph">
+            Actualmente es fácil darse cuenta de que detrás de un texto de este
+            tipo existe alguna forma de sustitución de letras, por lo que
+            bastaría intentar cada uno de los posibles casos hasta que
+            eventualmente se dé con el resultado.
           </p>
         </article>
       </section>
+      <span class="about__links"
+        >Obten más información sobre el
+        <a
+          class="about__link"
+          href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          cifrado César
+        </a>
+        o el
+        <a
+          class="about__link"
+          href="https://github.com/anthonysanlucas/encrypted-messages"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          código
+        </a>
+        de este sitio web
+      </span>
     </main>
     <!-- particle scripts -->
     <script src="scripts/particles.min.js"></script>
